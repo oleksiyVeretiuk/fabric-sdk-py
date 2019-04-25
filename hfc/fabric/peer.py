@@ -91,7 +91,7 @@ class Peer(object):
         try:
             self._endpoint = info['url']
             self._grpc_options = info['grpcOptions']
-            self._tls_ca_certs_path = info['tlsCACerts']['path']
+            # self._tls_ca_certs_path = info['tlsCACerts']['path']
             if 'clientKey' in info:
                 self._client_key_path = info['clientKey']['path']
             if 'clientCert' in info:
